@@ -1,9 +1,8 @@
-import { Nav } from "@/ui/Nav";
 
 export default function Page() {
     return (
         <div className="min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-            <Nav />
+           
             <div className="container flex items-center justify-center text-justify min-h-screen px-10 lg:px-4 mx-auto sm:pt-40">
                 <div className="flex flex-col text-sm w-[450px] sm:w-[800px] mx-auto mt-28 sm:mt-0 gap-12">
                     <div className="flex flex-col items-start">

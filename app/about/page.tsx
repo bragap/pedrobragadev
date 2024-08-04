@@ -1,4 +1,3 @@
-import { Nav } from "@/ui/Nav";
 import Image from "next/image";
 import perfil from '@/public/images/home/perfil.jpg';
 import tis3 from "@/public/images/home/tis3.jpg";
@@ -10,12 +9,12 @@ import speak from '@/public/images/home/speak.jpg';
 export default function Page() {
     return (
         <div className="bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-            <Nav />
+            
             <div className="container flex items-center justify-center text-justify min-h-screen px-10 lg:px-4 mx-auto sm:pt-40">
                 <div className="flex flex-col text-sm w-[450px] sm:w-[800px] mx-auto mt-28 sm:mt-0 lg:gap-12">
                     <div className="flex flex-col items-start">
                         <h2 className="text-base sm:text-xl mb-4 text-zinc-500">Who I am</h2>
-                        <p className="text-sm sm:text-base text-zinc-300 mb-4"> Hi! I'm Pedro. I was born in Três Corações, MG, and I'm currently living in Belo Horizonte.</p>
+                        <p className="text-sm sm:text-base text-zinc-300 mb-4">  I was born in Três Corações, MG, and I'm currently living in Belo Horizonte.</p>
                         <p className="text-sm sm:text-base text-zinc-300 mb-4">I'm a passionate and dedicated Software Engineer in formation at PUC Minas. I specialize in full-stack web development and product design.</p>
                         <p className="text-sm sm:text-base text-zinc-300 mb-4 ">When I'm not at my desk, I am probably lifting weights, playing soccer, or at a local coffee shop :]</p>
                         <p className="text-sm sm:text-base text-zinc-300 ">My family, my girlfriend, my friends and Jesus are my base.</p>

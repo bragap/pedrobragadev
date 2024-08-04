@@ -9,8 +9,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      textColor:{
-        'color-primary': '#1db6b6'
+      fontFamily: {
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
       }
     },
   },

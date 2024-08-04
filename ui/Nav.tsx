@@ -3,7 +3,7 @@
 import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import pedro from "@/public/images/home/pedro.png"
+import logo from "@/public/images/home/logo.png"
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 
@@ -50,12 +50,7 @@ export const Nav = () => {
         };
     }, []);
 
-    const closeModalNav = () => {
-        setTimeout(() => {
-            setNav(false);
-        }
-            , 500);
-    }
+
 
     const pathname = usePathname();
 
@@ -66,17 +61,17 @@ export const Nav = () => {
 
                     <Link
                         href="/"
-                        className="duration-200 text-zinc-400 hover:text-zinc-100"
+                        className="duration-200  select-none"
                     >
-                        <Image src={pedro} alt="Perfil" width={50} height={40} />
+                        <Image src={logo} alt="Perfil" width={50} height={40} />
                     </Link>
                     <ul className="flex items-center gap-4">
                         {links.map((item) => (
                             <Link
                                 key={item.id}
                                 href={item.link}
-                                
-                                className={`text-xs sm:text-base ${pathname === item.link ? "text-white hover:text-zinc-400" : "text-zinc-400 hover:text-zinc-100"}  transition duration-300`}
+
+                                className={` text-xs sm:text-base ${pathname === item.link ? "text-white hover:text-zinc-400" : "text-zinc-400 hover:text-zinc-100"}  transition duration-300`}
                             >
                                 {item.name}
                             </Link>
@@ -91,7 +86,7 @@ export const Nav = () => {
                         href="/"
                         className=""
                     >
-                        <Image src={pedro} alt="Perfil" width={50} height={40} />
+                        <Image src={logo} alt="Perfil" width={50} height={40} />
                     </Link>
                     <div
                         onClick={() => setNav(!nav)}
@@ -115,32 +110,6 @@ export const Nav = () => {
                     ))}
                 </ul>
             )}
-
-
         </header >
     );
 };
-
-
-
-// export const Nav = () => {
-//     return (
-//         <header>
-//             <div className="absolute top-5 w-full">
-//                 <ul className="flex items-center justify-center gap-4">
-//                     {links.map((item) => (
-//                         <Link
-//                             key={item.id}
-//                             href={item.link}
-//                             className="text-xs sm:text-base text-zinc-400 hover:text-zinc-200 transition duration-300"
-//                         >
-//                             {item.name}
-//                         </Link>
-//                     ))}
-//                 </ul>
-//             </div>
-//             <div className="absolute w-full h-px bg-gradient-to-r from-transparent via-zinc-300 to-transparent sm:top-16 top-14" />
-//         </header>
-
-//     )
-// }
