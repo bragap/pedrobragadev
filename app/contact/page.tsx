@@ -37,11 +37,11 @@ export default function Example() {
                     </div>
                     <div className="grid w-full grid-cols-1 gap-8 mx-auto sm:grid-cols-3 ">
                         {socials.map((s) => (
-                            <Card>
+                            <Card key={s.id}>
                                 <Link
                                     href={s.href}
                                     target="_blank"
-                                    key={s.id}
+                                    
                                     className=" relative flex flex-col items-center gap-4 duration-800 group md:gap-8 py-14 "
                                 >
                                     <span
