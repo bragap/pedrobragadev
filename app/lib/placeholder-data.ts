@@ -1,22 +1,22 @@
 const links = [
     {
         id: 1,
-        link: "/about",
+        url: "/about",
         name: "About"
     },
     {
         id: 2,
-        link: "/experience",
+        url: "/experience",
         name: "Experience"
     },
     {
         id: 3,
-        link: "/projects",
+        url: "/projects",
         name: "Projects"
     },
     {
         id: 4,
-        link: "/contact",
+        url: "/contact",
         name: "Contact"
     }
 ];

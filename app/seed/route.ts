@@ -17,13 +17,13 @@ async function seedLinks() {
     const insertedLinks = await Promise.all(
         links.map((link) => {
             return client.sql`
-                INSERT INTO links (name, link)
-                VALUES (${link.name}, ${link.link})
+                INSERT INTO links (name, url)
+                VALUES (${link.name}, ${link.url})
                 RETURNING *
             `;
         })
     );
-    
+
     return insertedLinks;
 }
 
@@ -89,6 +89,7 @@ export async function GET() {
     } 
     catch (error) {
         await client.sql`ROLLBACK`;
+        console.error('Error during seeding:', error);
         return new Response(JSON.stringify({ message: 'Seed failed' }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' },
