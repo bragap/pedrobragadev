@@ -24,9 +24,7 @@ async function seedLinks() {
         })
     );
     
-
     return insertedLinks;
-
 }
 
 async function seedExperience() {
@@ -42,7 +40,7 @@ async function seedExperience() {
     const insertedExperience = await Promise.all(
         experience.map((exp) => {
             return client.sql`
-                INSERT INTO experience (title, description,date)
+                INSERT INTO experience (title, description, date)
                 VALUES (${exp.title}, ${exp.description}, ${exp.date})
                 RETURNING *
             `;
@@ -77,19 +75,24 @@ async function seedProjects() {
     return insertedProjects;
 }
 
-
-export async function GET(){
-    try{
+export async function GET() {
+    try {
         await client.sql`BEGIN`;
         await seedLinks();
         await seedExperience();
         await seedProjects();
         await client.sql`COMMIT`;
-        return { status: 200, body: { message: 'Seed successful' } };
+        return new Response(JSON.stringify({ message: 'Seed successful' }), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' },
+        });
     } 
     catch (error) {
         await client.sql`ROLLBACK`;
-        return { status: 500, body: { message: 'Seed failed' } };
+        return new Response(JSON.stringify({ message: 'Seed failed' }), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' },
+        });
     }
     finally {
         client.release();
