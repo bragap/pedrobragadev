@@ -5,18 +5,21 @@ import { Card } from "@/ui/Card";
 const socials = [
     {
         icon: <LinkedinIcon size={20} />,
+        id:1,
         href: "https://www.linkedin.com/in/pedrobragadecastro/",
         label: "Linkedln",
         handle: "Connect whit me,",
     },
     {
         icon: <Mail size={20} />,
+        id:2,
         href: "mailto:pedrohbcastro2002@gmail.com",
         label: "Email",
         handle: "send me an email,",
     },
     {
         icon: <Github size={20} />,
+        id:3,
         href: "https://github.com/bragap",
         label: "Github",
         handle: "and see my projects!",
@@ -38,6 +41,7 @@ export default function Example() {
                                 <Link
                                     href={s.href}
                                     target="_blank"
+                                    key={s.id}
                                     className=" relative flex flex-col items-center gap-4 duration-800 group md:gap-8 py-14 "
                                 >
                                     <span
