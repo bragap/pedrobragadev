@@ -71,7 +71,7 @@ export const Nav = () => {
                                 key={item.id}
                                 href={item.link}
 
-                                className={` text-xs sm:text-base ${pathname === item.link ? "text-white hover:text-zinc-400" : "text-zinc-400 hover:text-zinc-100"}  transition duration-300`}
+                                className={` font-medium text-xs sm:text-base ${pathname === item.link ? "text-white hover:text-zinc-400" : "text-zinc-400 hover:text-zinc-100"}  transition duration-300`}
                             >
                                 {item.name}
                             </Link>

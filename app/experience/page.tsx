@@ -1,15 +1,17 @@
 
 export default function Page() {
     return (
-        <div className="min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
-           
+        <div className="min-h-screen">
             <div className="container flex items-center justify-center text-justify min-h-screen px-10 lg:px-4 mx-auto sm:pt-40">
                 <div className="flex flex-col text-sm w-[450px] sm:w-[800px] mx-auto mt-28 sm:mt-0 gap-12">
                     <div className="flex flex-col items-start">
-                        <h2 className="text-base sm:text-xl mb-4 text-zinc-500">My fucking experience</h2>
-                        <p className="text-sm sm:text-base text-zinc-300 mb-5"> I specialize in Next.js, React.js, web development, UI/UX, and product design. But I am always learning new things. See my experience below.</p>
+                        <h2 className="text-base sm:text-2xl mb-4 text-zinc-50">My fucking experience</h2>
+                        <p className="text-base sm:text-lg text-zinc-400"> I specialize in Next.js, React.js, web development, UI/UX, and product design. I'm always looking for new challenges and opportunities to learn and grow. See my experience below.</p>
 
                     </div>
+
+                    <hr className=" border-neutral-100 dark:border-neutral-800" />
+                    
                     <div className="flex flex-col ">
                         <h2 className="text-base sm:text-xl text-zinc-300">Software Engineering</h2>
                         <p className="mb-4 md:mb-4 text-base text-zinc-400 ">Jan 2023 - Dec 2026</p>
@@ -39,10 +41,10 @@ export default function Page() {
 
 
                     <div className="flex flex-col ">
-                        
-                            <h2 className="text-base sm:text-xl text-zinc-300">Hackathon of AlfaEngenharia</h2>
-                            <p className="mb-4 md:mb-4 text-base text-zinc-400 ">Aug 2023</p>
-        
+
+                        <h2 className="text-base sm:text-xl text-zinc-300">Hackathon of AlfaEngenharia</h2>
+                        <p className="mb-4 md:mb-4 text-base text-zinc-400 ">Aug 2023</p>
+
                         <p className="text-sm sm:text-base text-zinc-500 mb-5"> I took part in the AlfaEngenharia Hackathon. At this event, I deepened myknowledge of FrontEnd and was responsible for its complete development during the
                             activity. I used the following tools: JavaScript, HTML, CSS, Bootstrap.</p>
                     </div>

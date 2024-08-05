@@ -6,13 +6,16 @@ import { MoveUpRight, Github } from "lucide-react";
 
 export default function Page() {
     return (
-        <div className="min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+        <div className="min-h-screen">
             <div className="container flex items-center justify-center text-justify min-h-screen px-10 lg:px-4 mx-auto sm:pt-40">
-                <div className="flex flex-wrap text-sm w-[450px] sm:w-[800px] mx-auto mt-28 sm:mt-0 gap-12">
+                <div className="flex flex-wrap  w-[450px] sm:w-[800px] mx-auto mt-28 sm:mt-0 gap-12">
                     <div className="flex flex-col items-start">
-                        <h2 className="text-base sm:text-xl mb-4 text-zinc-500">Featured projects</h2>
-                        <p className="text-sm sm:text-base text-zinc-300 mb-5"> Here are some of the selected projects that showcase my passion for front-end development.</p>
+                        <h2 className="text-base sm:text-2xl mb-4 text-zinc-50">Featured projects</h2>
+                        <p className="text-base sm:text-lg text-zinc-400 "> Here are some of the selected projects that showcase my passion for front-end development.</p>
                     </div>
+
+                    <hr className=" w-full border-neutral-100 dark:border-neutral-800" />
+
                     <div className="flex md:flex-row flex-col gap-4 mb-6">
                         <Image
                             alt="Me speaking on stage at React tis3 about the future of Next.js"

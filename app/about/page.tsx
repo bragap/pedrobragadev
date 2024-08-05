@@ -8,16 +8,16 @@ import speak from '@/public/images/home/speak.jpg';
 
 export default function Page() {
     return (
-        <div className="bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+        <div className="">
             
             <div className="container flex items-center justify-center text-justify min-h-screen px-10 lg:px-4 mx-auto sm:pt-40">
                 <div className="flex flex-col text-sm w-[450px] sm:w-[800px] mx-auto mt-28 sm:mt-0 lg:gap-12">
                     <div className="flex flex-col items-start">
-                        <h2 className="text-base sm:text-xl mb-4 text-zinc-500">Who I am</h2>
-                        <p className="text-sm sm:text-base text-zinc-300 mb-4">  I was born in Três Corações, MG, and I'm currently living in Belo Horizonte.</p>
-                        <p className="text-sm sm:text-base text-zinc-300 mb-4">I'm a passionate and dedicated Software Engineer in formation at PUC Minas. I specialize in full-stack web development and product design.</p>
-                        <p className="text-sm sm:text-base text-zinc-300 mb-4 ">When I'm not at my desk, I am probably lifting weights, playing soccer, or at a local coffee shop :]</p>
-                        <p className="text-sm sm:text-base text-zinc-300 ">My family, my girlfriend, my friends and Jesus are my base.</p>
+                        <h2 className="text-base sm:text-2xl mb-4 text-zinc-50">Who I am</h2>
+                        <p className="text-base sm:text-lg text-zinc-400 mb-4">  I was born in Três Corações, MG, and I'm currently living in Belo Horizonte.</p>
+                        <p className="text-base sm:text-lg text-zinc-400 mb-4">I'm a passionate and dedicated Software Engineer in formation at PUC Minas. I specialize in full-stack web development and product design.</p>
+                        <p className="text-base sm:text-lg text-zinc-400 mb-4 ">When I'm not at my desk, I am probably lifting weights, playing soccer, or at a local coffee shop :]</p>
+                        <p className="text-base sm:text-lg text-zinc-400 ">My family, my girlfriend, my friends and Jesus are my base.</p>
                     </div>
                     <div className="grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8">
                         <div className="relative h-40">

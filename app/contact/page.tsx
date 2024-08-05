@@ -25,12 +25,12 @@ const socials = [
 
 export default function Example() {
     return (
-        <div className="min-h-screen bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+        <div className="min-h-screen ">
             <div className="container flex items-start justify-center text-justify min-h-screen px-10  mx-auto sm:pt-40 ">
                 <div className="flex flex-wrap text-sm w-[450px] sm:w-[800px] mx-auto mt-28 sm:mt-0 gap-12">
                     <div className="flex flex-col items-start">
-                        <h2 className="text-base sm:text-xl mb-4 text-zinc-500">Let's make contact!</h2>
-                        <p className="text-sm sm:text-base text-zinc-300">  Here are the ways that you can reach me! Feel free to use.</p>
+                        <h2 className="text-base sm:text-2xl mb-4 text-zinc-50">Let's make contact!</h2>
+                        <p className="text-base sm:text-lg text-zinc-400">  Here are the ways that you can reach me! Feel free to use.</p>
                     </div>
                     <div className="grid w-full grid-cols-1 gap-8 mx-auto sm:grid-cols-3 ">
                         {socials.map((s) => (
