@@ -10,26 +10,25 @@ import { usePathname } from "next/navigation";
 const links = [
     {
         id: 1,
-        link: "/about",
+        url: "/about",
         name: "About"
     },
     {
         id: 2,
-        link: "/experience",
+        url: "/experience",
         name: "Experience"
     },
     {
         id: 3,
-        link: "/projects",
+        url: "/projects",
         name: "Projects"
     },
     {
         id: 4,
-        link: "/contact",
+        url: "/contact",
         name: "Contact"
     }
 ];
-
 export const Nav = () => {
 
     const [nav, setNav] = useState(false);
@@ -40,7 +39,6 @@ export const Nav = () => {
         }
     };
 
-
     useEffect(() => {
         window.addEventListener('resize', handleResize);
 
@@ -49,8 +47,6 @@ export const Nav = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
-
 
     const pathname = usePathname();
 
@@ -66,12 +62,12 @@ export const Nav = () => {
                         <Image src={logo} alt="Perfil" width={50} height={40} />
                     </Link>
                     <ul className="flex items-center gap-4">
-                        {links.map((item) => (
+                        {links && links.map((item) => (
                             <Link
                                 key={item.id}
-                                href={item.link}
+                                href={item.url}
 
-                                className={` font-medium text-xs sm:text-base ${pathname === item.link ? "text-white hover:text-zinc-400" : "text-zinc-400 hover:text-zinc-100"}  transition duration-300`}
+                                className={` font-medium text-xs sm:text-base ${pathname === item.url ? "text-white hover:text-zinc-400" : "text-zinc-400 hover:text-zinc-100"}  transition duration-300`}
                             >
                                 {item.name}
                             </Link>
@@ -98,12 +94,12 @@ export const Nav = () => {
 
             {nav && (
                 <ul className="sm:hidden duration-200 flex flex-col items-center absolute z-30 top-16 right-0 w--[px] bg-zinc-900 bg-gradient-to-t from-zinc-900/0 via-zinc-900 to-zinc-900/0 ">
-                    {links.map(({ id, link, name }) => (
+                    {links && links.map(({ id, url, name }) => (
                         <li
                             key={id}
                             className="px-4 cursor-pointer capitalize py-3 text-base duration-200 text-zinc-400 hover:text-zinc-100"
                         >
-                            <Link onClick={() => setNav(!nav)} href={link}>
+                            <Link onClick={() => setNav(!nav)} href={url}>
                                 {name}
                             </Link>
                         </li>
@@ -113,3 +109,4 @@ export const Nav = () => {
         </header >
     );
 };
+

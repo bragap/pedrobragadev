@@ -30,11 +30,14 @@ export default function Example() {
     return (
         <div className="min-h-screen ">
             <div className="container flex items-start justify-center text-justify min-h-screen px-10  mx-auto sm:pt-40 ">
-                <div className="flex flex-wrap text-sm w-[450px] sm:w-[800px] mx-auto mt-28 sm:mt-0 gap-12">
+                <div className="flex flex-wrap text-sm w-[450px] sm:pl-2 sm:w-[800px] mx-auto mt-28 sm:mt-0 gap-12">
                     <div className="flex flex-col items-start">
-                        <h2 className="text-base sm:text-2xl mb-4 text-zinc-50">Let's make contact!</h2>
-                        <p className="text-base sm:text-lg text-zinc-400">  Here are the ways that you can reach me! Feel free to use.</p>
+                        <h2 className="text-base sm:text-2xl mb-4 text-zinc-50">Let's make contact</h2>
+                        <p className="text-base sm:text-lg text-zinc-400"> I don't use social media anymore. So, here are the ways that you can reach me. Feel free to use! </p>
                     </div>
+
+                    <hr className=" w-full border-neutral-100 dark:border-neutral-800" />
+
                     <div className="grid w-full grid-cols-1 gap-8 mx-auto sm:grid-cols-3 ">
                         {socials.map((s) => (
                             <Card key={s.id}>
