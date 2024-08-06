@@ -10,7 +10,7 @@ export default function Page() {
     return (
         <div className="">
             
-            <div className="container flex items-center justify-center text-justify min-h-screen px-10 lg:px-4 mx-auto sm:pt-40">
+            <div className="container flex items-center justify-center min-h-screen px-10 lg:px-4 mx-auto sm:pt-40">
                 <div className="flex flex-col text-sm w-[450px] sm:pl-2 sm:w-[800px] mx-auto mt-28 sm:mt-0 lg:gap-12">
                     <div className="flex flex-col items-start">
                         <h2 className="text-base sm:text-2xl mb-4 text-zinc-50">Who I am</h2>
