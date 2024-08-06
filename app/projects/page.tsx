@@ -17,7 +17,7 @@ export default async function Page() {
                     </div>
                     <hr className=" w-full border-neutral-100 dark:border-neutral-800" />
                     {data && data.map((d) => (
-                        <div className="flex md:flex-row flex-col gap-4 mb-6">
+                        <div className="flex md:flex-row flex-col gap-4 mb-6" key={d.id}>
                             <Image
                                 alt="Me speaking on stage at React tis3 about the future of Next.js"
                                 src={d.img_url}
