@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { MoveUpRight, Github } from "lucide-react";
 import { fetchProjects } from "../lib/data";
 
 
