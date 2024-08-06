@@ -93,11 +93,11 @@ export const Nav = () => {
             </div>
 
             {nav && (
-                <ul className="sm:hidden duration-200 flex flex-col items-center absolute z-30 top-16 right-0 w--[px] bg-zinc-900 bg-gradient-to-t from-zinc-900/0 via-zinc-900 to-zinc-900/0 ">
+                <ul className="sm:hidden transition duration-200 p-2 flex flex-col items-left absolute z-30 top-16 right-0 w-[200px] rounded-xl bg-zinc-950  ">
                     {links && links.map(({ id, url, name }) => (
                         <li
                             key={id}
-                            className="px-4 cursor-pointer capitalize py-3 text-base duration-200 text-zinc-400 hover:text-zinc-100"
+                            className="px-4 cursor-pointer capitalize py-3 text-base duration-200 text-zinc-300 hover:text-white"
                         >
                             <Link onClick={() => setNav(!nav)} href={url}>
                                 {name}
