@@ -15,7 +15,7 @@ export default function Home() {
                             I specialize in Next.js, React.js and web development.
                         </p>
                         <div className="flex flex-col gap-2 sm:flex-row sm:gap-4 flex-wrap" >
-                            <div className="animate-in-slow flex justify-center items-center bg-zinc-900 py-1 px-3 rounded-3xl hover:bg-zinc-800 transition duration-300" style={{ "--index": 1.5 } as React.CSSProperties}>
+                            <div className="animate-in-slow flex justify-start items-center sm:justify-center bg-zinc-900 py-1 px-3 rounded-3xl hover:bg-zinc-800 transition duration-300 " style={{ "--index": 1.5 } as React.CSSProperties}>
                                 <Link href="https://www.linkedin.com/in/pedrobragadecastro/" target="_blank" className=" flex items-center text-zinc-300 gap-1" >
                                     LinkedIn
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" className="h-4 w-4 text-zinc-500">
@@ -23,7 +23,7 @@ export default function Home() {
                                     </svg>
                                 </Link>
                             </div>
-                            <div className=" animate-in-slow flex justify-center items-center bg-zinc-900 py-1 px-3 rounded-3xl hover:bg-zinc-800 transition duration-300" style={{ "--index": 2 } as React.CSSProperties}>
+                            <div className=" animate-in-slow flex justify-start items-center sm:justify-center bg-zinc-900 py-1 px-3 rounded-3xl hover:bg-zinc-800 transition duration-300" style={{ "--index": 2 } as React.CSSProperties}>
                                 <Link href="https://api.whatsapp.com/send?phone=5535999482180" target="_blank" className="flex items-center text-zinc-300 gap-1">
                                     WhatsApp
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" className="h-4 w-4 text-zinc-500">
@@ -31,7 +31,7 @@ export default function Home() {
                                     </svg>
                                 </Link>
                             </div>
-                            <div className="animate-in-slow flex justify-center items-center bg-zinc-900 py-1 px-3 rounded-3xl hover:bg-zinc-800 transition duration-300" style={{ "--index": 2.5 } as React.CSSProperties}>
+                            <div className="animate-in-slow flex justify-start items-center sm:justify-center bg-zinc-900 py-1 px-3 rounded-3xl hover:bg-zinc-800 transition duration-300" style={{ "--index": 2.5 } as React.CSSProperties}>
                                 <Link href="https://github.com/bragap" target="_blank" className="flex items-center text-zinc-300 gap-1">
                                     GitHub
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" className="h-4 w-4 text-zinc-500">
