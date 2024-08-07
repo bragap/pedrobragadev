@@ -1,7 +1,5 @@
 import { sql } from '@vercel/postgres';
-
 import { Link, Experience, Project } from './definitions';
-
 
 
 export async function fetchLinks(): Promise<{ data: Link[] | null, error: string | null }> {

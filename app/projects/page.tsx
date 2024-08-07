@@ -1,7 +1,7 @@
+
 import Image from "next/image";
 import Link from "next/link";
 import { fetchProjects } from "../lib/data";
-
 
 
 export default async function Page() {
@@ -10,16 +10,14 @@ export default async function Page() {
     return (
         <div className="min-h-screen">
             <div className="container flex items-center justify-center min-h-screen px-10 lg:px-4 mx-auto sm:pt-40">
-                <div 
-
-                className="flex flex-wrap  w-[450px] pl-2 sm:w-[800px] mx-auto mt-28 sm:mt-0 gap-12">
-                    <div className="flex flex-col items-start">
+                <div className=" flex flex-wrap  w-[450px] pl-2 sm:w-[800px] mx-auto mt-28 sm:mt-0 gap-12">
+                    <div className="animate-in-slow flex flex-col items-start">
                         <h2 className="pb-8 font-medium tracking-tighter text-2xl  text-zinc-50">Featured projects</h2>
                         <p className="text-base sm:text-lg text-zinc-400 "> Here are some of the selected projects that showcase my passion for front-end development!</p>
                     </div>
-                    <hr className=" w-full border-neutral-100 dark:border-neutral-800" />
-                    {data && data.map((d) => (
-                        <div className="flex md:flex-row flex-col gap-4 mb-6" key={d.id}>
+                    <hr className=" animate-in-slow w-full border-neutral-100 dark:border-neutral-800" />
+                    {data && data.map((d,index) => (
+                        <div className="animate-in-slow flex md:flex-row flex-col gap-4 mb-6" key={d.id} style={{ "--index": index * 1.7 } as React.CSSProperties}>
                             <Image
                                 alt="Me speaking on stage at React tis3 about the future of Next.js"
                                 src={d.img_url}

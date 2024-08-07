@@ -9,14 +9,22 @@
 
 body::-webkit-scrollbar {
     width: 10px;             
-  }
+}
   
-  body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
     background: #000000;      
-  }
+}
   
-  body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
     background-color: rgb(39 39 42);    
     border-radius: 5px;       
     border: 1px solid rgb(39 39 42);  
-  }
+}
+
+.animate-in {
+    animation-delay: calc(var(--index) * 200ms);
+}
+
+.animate-in-slow{
+    animation-delay: calc(var(--index) * 200ms);
+}

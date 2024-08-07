@@ -97,7 +97,7 @@ export const Nav = () => {
             
 
             {nav && (
-                <ul className="sm:hidden transition duration-200 p-2 flex flex-col items-left absolute z-30 top-16 right-0 w-[200px] rounded-xl bg-zinc-950  ">
+                <ul className="animate-in sm:hidden transition duration-200 p-2 flex flex-col items-left absolute z-30 top-16 right-0 w-[200px] rounded-xl bg-zinc-950  ">
                     {links && links.map(({ id, url, name }) => (
                         <li
                             key={id}
