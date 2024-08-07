@@ -29,6 +29,9 @@ const links = [
         name: "Contact"
     }
 ];
+
+
+
 export const Nav = () => {
 
     const [nav, setNav] = useState(false);
@@ -41,7 +44,6 @@ export const Nav = () => {
 
     useEffect(() => {
         window.addEventListener('resize', handleResize);
-
 
         return () => {
             window.removeEventListener('resize', handleResize);
@@ -57,7 +59,7 @@ export const Nav = () => {
 
                     <Link
                         href="/"
-                        className="duration-200  select-none"
+                        className="duration-200  select-none" onClick={() => setNav(nav => !nav)}
                     >
                         <Image src={logo} alt="Perfil" width={50} height={40} />
                     </Link>
@@ -85,12 +87,14 @@ export const Nav = () => {
                         <Image src={logo} alt="Perfil" width={50} height={40} />
                     </Link>
                     <div
-                        onClick={() => setNav(!nav)}
+                        onClick={() => setNav(nav => !nav)}
                         className="flex cursor-pointer text-gray-500 focus:ring sm:hidden">
                         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
                     </div>
                 </div>
             </div>
+
+            
 
             {nav && (
                 <ul className="sm:hidden transition duration-200 p-2 flex flex-col items-left absolute z-30 top-16 right-0 w-[200px] rounded-xl bg-zinc-950  ">
@@ -106,6 +110,8 @@ export const Nav = () => {
                     ))}
                 </ul>
             )}
+           
+
         </header >
     );
 };

@@ -9,7 +9,7 @@ export default function Home() {
                 <div className="flex flex-wrap w-[450px] sm:w-[800px] pl-2 mx-auto mt-28 sm:mt-0 gap-12">
                     <div className="flex flex-col items-start">
                         <h1 className="pb-8 font-medium tracking-tighter text-2xl  text-zinc-50  select-none">
-                            Hey! I'm Pedro Braga 👋
+                            Hey, I'm Pedro Braga!
                         </h1>
                         <p className="text-base sm:text-lg font-medium text-zinc-400 mb-8"> I'm a software engineer and frontend developer focused in UI/UX and interaction design.
                             I specialize in Next.js, React.js and web development.
