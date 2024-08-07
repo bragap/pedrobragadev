@@ -14,7 +14,7 @@ export default function Home() {
                             I'm a software engineer and frontend developer focused in UI/UX and interaction design.
                             I specialize in Next.js, React.js and web development.
                         </p>
-                        <div className=" flex gap-2 sm:gap-4 flex-wrap" >
+                        <div className="flex flex-col gap-2 sm:flex-row sm:gap-4 flex-wrap" >
                             <div className="animate-in-slow flex justify-center items-center bg-zinc-900 py-1 px-3 rounded-3xl hover:bg-zinc-800 transition duration-300" style={{ "--index": 1.5 } as React.CSSProperties}>
                                 <Link href="https://www.linkedin.com/in/pedrobragadecastro/" target="_blank" className=" flex items-center text-zinc-300 gap-1" >
                                     LinkedIn
