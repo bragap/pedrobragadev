@@ -1,6 +1,6 @@
 import { LinkedinIcon, Mail, Github } from "lucide-react";
 import Link from "next/link";
-import { Card } from "@/ui/Card";
+import { Card } from "@/app/components/Card";
 
 const socials = [
     {
