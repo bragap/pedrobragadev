@@ -1,7 +1,12 @@
 import { LinkedinIcon, Mail, Github } from "lucide-react";
 import Link from "next/link";
 import { Card } from "@/app/components/Card";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "Contact | Pedro Braga",
+    description: "Software Engineer and Front-End Developer.",
+  };
 const socials = [
     {
         icon: <LinkedinIcon size={20} />,

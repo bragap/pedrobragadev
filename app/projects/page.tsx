@@ -2,6 +2,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { fetchProjects } from "../lib/data";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Projects | Pedro Braga",
+    description: "Software Engineer and Front-End Developer.",
+};
 
 
 export default async function Page() {
@@ -16,7 +22,7 @@ export default async function Page() {
                         <p className="text-base sm:text-lg text-zinc-400 "> Here are some of the selected projects that showcase my passion for front-end development!</p>
                     </div>
                     <hr className=" animate-in-slow w-full border-neutral-100 dark:border-neutral-800" />
-                    {data && data.map((d,index) => (
+                    {data && data.map((d, index) => (
                         <div className="animate-in-slow flex md:flex-row flex-col gap-4 mb-6" key={d.id} style={{ "--index": index * 1.7 } as React.CSSProperties}>
                             <Image
                                 alt="Me speaking on stage at React tis3 about the future of Next.js"

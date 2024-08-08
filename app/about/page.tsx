@@ -5,7 +5,13 @@ import staff from '@/public/images/home/staff.jpg';
 import hack from '@/public/images/home/hack.jpg';
 import webtech from '@/public/images/home/webtech.jpg';
 import speak from '@/public/images/home/speak.jpg';
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+    title: "About | Pedro Braga",
+    description: "Software Engineer and Front-End Developer.",
+  };
+  
 export default function Page() {
     return (
         <div className="">

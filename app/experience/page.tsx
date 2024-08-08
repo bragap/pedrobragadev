@@ -2,7 +2,11 @@
 import React from 'react';
 import { fetchExperience } from "../lib/data";
 import { Experience } from "../lib/definitions";
-
+import { Metadata } from 'next';
+export const metadata: Metadata = {
+    title: "Experience | Pedro Braga",
+    description: "Software Engineer and Front-End Developer.",
+  };
 
 export default async function Page() {
     const { data, error } = await fetchExperience();
