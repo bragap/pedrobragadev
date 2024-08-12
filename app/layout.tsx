@@ -5,6 +5,7 @@ import "./globals.css";
 import { Nav } from "@/app/components/Nav";
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://pedrobragadev.com'),
   title: "Pedro Braga",
   description: "Software Engineer and Front-End Developer.",
 };
