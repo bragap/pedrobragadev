@@ -28,7 +28,7 @@ export default function Page() {
                     <div className=" grid grid-cols-2 grid-rows-4 sm:grid-rows-3 sm:grid-cols-3 gap-4 my-8 " >
                         <div className="relative h-40">
                             <Image
-                                alt="Me speaking on stage at React tis3 about the future of Next.js"
+                                alt="staff with Rommel Carneiro"
                                 src={staff}
                                 fill
                                 sizes="(max-width: 768px) 213px, 33vw"
@@ -39,7 +39,7 @@ export default function Page() {
                         </div>
                         <div className="relative sm:row-span-2 row-span-1">
                             <Image
-                                alt="Me standing on stage at staff delivering the keynote"
+                                alt="hackathon alfa"
                                 src={hack}
                                 fill
                                 sizes="(max-width: 768px) 213px, 33vw"
@@ -50,7 +50,7 @@ export default function Page() {
                         </div>
                         <div className="relative">
                             <Image
-                                alt="Me and Guillermo Rauch on stage for Vercel alfa, answering questions from the Next.js community"
+                                alt="webtech team"
                                 src={webtech}
                                 fill
                                 sizes="(max-width: 768px) 213px, 33vw"
@@ -61,7 +61,7 @@ export default function Page() {
                         </div>
                         <div className="relative row-span-2">
                             <Image
-                                alt="Me, Lydia, and Delba filming the Next.js Conf keynote"
+                                alt="tis3"
                                 src={tis3}
                                 fill
                                 sizes="(max-width: 768px) 213px, 33vw"
@@ -72,7 +72,7 @@ export default function Page() {
                         </div>
                         <div className="relative row-span-2">
                             <Image
-                                alt="My badge on top of a pile of badges from a Vercel meetup we held"
+                                alt="my perfil"
                                 src={perfil}
                                 fill
                                 sizes="(max-width: 768px) 213px, 33vw"
@@ -84,7 +84,7 @@ export default function Page() {
                         </div>
                         <div className="relative h-40">
                             <Image
-                                alt="Me standing on stage at perfilConf giving a talk about my optimism for the web"
+                                alt="speak in alfa"
                                 src={speak}
                                 fill
                                 sizes="(max-width: 768px) 213px, 33vw"
