@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function Home() {
     return (
-        <div className="min-h-screen flex flex-col justify-between">
-            <div className="container flex justify-center min-h-screen px-10 lg:px-4 mx-auto sm:pt-40">
+        <div className=" flex flex-col justify-between">
+            <div className="container flex justify-center  px-10 lg:px-4 mx-auto sm:pt-40">
                 <div className="flex flex-wrap w-[450px] sm:w-[800px] pl-2 mx-auto mt-28 sm:mt-0 gap-12">
                     <div className="flex flex-col items-start">
                         <h1 className="animate-in-slow pb-8 font-medium tracking-tighter text-2xl text-zinc-50 select-none" style={{ "--index": 1 } as React.CSSProperties}>
